@@ -60,10 +60,14 @@ const MenuScreen = ({ navigation }) => {
     });
   }, []);
   return (
-    <ScrollView>
-      <LinearGradient colors={["rgba(5, 250, 242, 0.4", "#fff"]}>
+    <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
+      <LinearGradient
+        style={{ flex: 1 }}
+        colors={["rgba(5, 250, 242, 0.4)", "#fff"]}>
         <View style={styles.itemCont}>
-          <MenuItemCard />
+          {menuData.map((data) => (
+            <MenuItemCard key={data.text} text={data.text} img={data.img} />
+          ))}
         </View>
       </LinearGradient>
     </ScrollView>
@@ -72,4 +76,13 @@ const MenuScreen = ({ navigation }) => {
 
 export default MenuScreen;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  itemCont: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-evenly",
+  },
+});

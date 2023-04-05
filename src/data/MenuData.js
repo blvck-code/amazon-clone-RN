@@ -37,7 +37,7 @@ export const menuData = [
   },
   {
     img: "https://w7.pngwing.com/pngs/599/150/png-transparent-iphone-x-front-view-apple%E6%89%8B%E6%9C%BA-iphone-intelligent-mobile-phone-thumbnail.png",
-    text: "Mobile",
+    text: "Mobiles",
   },
   {
     img: "https://w7.pngwing.com/pngs/601/908/png-transparent-computer-icons-clothing-accessories-tracksuit-others-miscellaneous-white-text.png",
