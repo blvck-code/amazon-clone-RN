@@ -23,7 +23,7 @@ For example, here is how you switch to a new node version using nave:
     node -v
     v12.3.1
 
-# Installing the Angular CLI
+# Installing the Expo CLI
 
 With the following command the expo-cli will be installed globally in your machine:
 
@@ -44,8 +44,12 @@ This should take a couple of minutes. If there are issues, try re-installing the
 
 # To run the Mobile App
 
-To run the frontend part of our code, we will use the Angular CLI:
+To run the frontend part of our code, we will use the Expo CLI:
 
     npx expo start or expo start
 
 Scan the QR code with your phone and download the Expo CLI to interact with the mobile app
+![alt text](assets/screenshots/IMG-1490.PNG?raw=true)
+![alt text](assets/screenshots/IMG-1491.PNG?raw=true)
+![alt text](assets/screenshots/IMG-1492.PNG?raw=true)
+![alt text](assets/screenshots/IMG-1493.PNG?raw=true)
