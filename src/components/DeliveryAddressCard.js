@@ -20,8 +20,8 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(155, 222, 225, 0.7)",
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-between",
     padding: 10,
+    gap: 5,
   },
   dliverText: {},
 });
