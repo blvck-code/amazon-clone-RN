@@ -78,7 +78,7 @@ const HomeScreen = ({ navigation }) => {
         <Text style={styles.dealText}>Electronics devices for home office</Text>
         <View style={styles.dealItemCont}>
           {devicesDealData.map((data) => (
-            <DealCard img={data.img} text={data.text} />
+            <DealCard key={data.text} img={data.img} text={data.text} />
           ))}
         </View>
       </View>
@@ -86,7 +86,7 @@ const HomeScreen = ({ navigation }) => {
         <Text style={styles.dealText}>Electronics devices for home office</Text>
         <View style={styles.dealItemCont}>
           {devicesDealData.map((data) => (
-            <DealCard img={data.img} text={data.text} />
+            <DealCard key={data.text} img={data.img} text={data.text} />
           ))}
         </View>
       </View>
