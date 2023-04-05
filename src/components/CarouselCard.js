@@ -6,7 +6,21 @@ import { data } from "../data/CarouselData";
 const CarouselCard = () => {
   return (
     <View>
-      <SliderBox images={data} />
+      <SliderBox
+        resizeMode="cover"
+        images={data}
+        autoplay={true}
+        sliderBoxHeight={225}
+        dorColor="#02C3D9"
+        dotStyle={{
+          width: 10,
+          height: 10,
+          borderRadius: 5,
+          backgroundColor: "rgba(128, 128, 128, 0.92)",
+          borderColor: "gray",
+          borderWidth: 1,
+        }}
+      />
     </View>
   );
 };

@@ -4,6 +4,8 @@ import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import { categoryData, dealData, devicesDealData } from "../data/CarouselData";
 import DeliveryAddressCard from "../components/DeliveryAddressCard";
 import CategoryCard from "../components/CategoryCard";
+import CarouselCard from "../components/CarouselCard";
+import DealCard from "../components/DealCard";
 
 const HomeScreen = ({ navigation }) => {
   useEffect(() => {
@@ -71,6 +73,23 @@ const HomeScreen = ({ navigation }) => {
           <CategoryCard key={dat.text} img={dat.img} text={dat.text} />
         ))}
       </ScrollView>
+      <CarouselCard />
+      <View>
+        <Text style={styles.dealText}>Electronics devices for home office</Text>
+        <View style={styles.dealItemCont}>
+          {devicesDealData.map((data) => (
+            <DealCard img={data.img} text={data.text} />
+          ))}
+        </View>
+      </View>
+      <View>
+        <Text style={styles.dealText}>Electronics devices for home office</Text>
+        <View style={styles.dealItemCont}>
+          {devicesDealData.map((data) => (
+            <DealCard img={data.img} text={data.text} />
+          ))}
+        </View>
+      </View>
     </ScrollView>
   );
 };
@@ -83,5 +102,17 @@ const styles = StyleSheet.create({
     paddingLeft: 15,
     paddingTop: 20,
     paddingBottom: 10,
+  },
+  dealText: {
+    fontSize: 16,
+    fontWeight: "bold",
+    marginBottom: 20,
+    marginLeft: 10,
+    marginTop: 20,
+  },
+  dealItemCont: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    flexWrap: "wrap",
   },
 });
